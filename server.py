@@ -41,7 +41,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(bytes(json.dumps(0), 'utf-8'))
         except Exception as e:
-            print(e, '\n')
             self.send_response(200)
             self.send_header('content-type', 'application/json')
             self.end_headers()

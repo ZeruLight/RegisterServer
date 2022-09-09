@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# Please run the following commands to install the required packages.
 # pip install psycopg2-binary
 # pip install bcrypt
 import http.server
@@ -8,7 +9,7 @@ import psycopg2
 import bcrypt
 from datetime import datetime, timedelta
 
-database_password = 'a'
+database_password = ''
 webserver_port = 80
 
 
